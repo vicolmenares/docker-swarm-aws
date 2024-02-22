@@ -5,7 +5,7 @@ resource "aws_iam_instance_profile" "swarm_cluster_profile" {
 
 resource "aws_iam_role_policy" "swarm_cluster_policy" {
   name = "swarm-cluster-policy"
-  role = "${aws_iam_role.swarm_cluster_role.id}"
+  role = ${aws_iam_role.swarm_cluster_role.id}
 
   policy = <<EOF
 {
