@@ -23,7 +23,7 @@ resource "aws_elb" "swarm_lb" {
   connection_draining         = true
   connection_draining_timeout = 400
 
-  tags {
+  tags = {
     Name = "swarm-elb"
   }
 }
